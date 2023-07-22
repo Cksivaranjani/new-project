@@ -1,0 +1,11 @@
+function calculateArea(length, width) {
+  // Check if the input values are valid numbers
+  if (typeof length !== 'number' || typeof width !== 'number' || isNaN(length) || isNaN(width)) {
+    throw new Error('Both length and width must be valid numbers.');
+  }
+
+  // Calculate the area by multiplying length and width
+  const area = length * width;
+
+  return area;
+}
